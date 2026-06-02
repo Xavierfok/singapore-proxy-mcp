@@ -1,5 +1,7 @@
 # Singapore Proxy MCP
 
+[![MCPize](https://mcpize.com/badge/@xavierfok/singapore-proxy)](https://mcpize.com/mcp/singapore-proxy)
+
 **Browse the web as if you were on a Singapore mobile network.** Give Claude, Cursor,
 Cline, or any MCP agent a real Singapore mobile IP (SingTel / StarHub / M1 carrier
 ASNs) to fetch pages, run Singapore-localized Google searches, and check geo-locked
@@ -9,6 +11,16 @@ content - something the agent cannot do on its own because it can't set a proxy.
 
 This is a **hosted (remote) MCP server**. You don't install or run any code - you point
 your client at the endpoint with a free API key and it works.
+
+## Connect via MCPize
+
+Use this MCP server instantly with no local installation:
+
+```bash
+npx -y mcpize connect @xavierfok/singapore-proxy --client claude
+```
+
+Or connect at: **https://mcpize.com/mcp/singapore-proxy**
 
 ## Quick start (30 seconds)
 
