@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.xavierfok/singapore-proxy-mcp",
-  "description": "Browse the web as if from a Singapore mobile IP. fetch_url, search_google, rotate_ip and my_proxy_status through real SingTel/StarHub/M1 mobile carrier ASNs.",
+  "description": "Browse the web and run Google search through real Singapore mobile carrier IPs.",
   "version": "1.0.0",
   "repository": {
     "url": "https://github.com/Xavierfok/singapore-proxy-mcp",
