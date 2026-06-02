@@ -22,12 +22,16 @@ your client at the endpoint with a free API key and it works.
   "mcpServers": {
     "singapore-proxy": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://mcp.singaporemobileproxy.com/mcp", "--header", "x-api-key:${SMP_API_KEY}"],
+      "args": ["-y", "singapore-proxy-mcp"],
       "env": { "SMP_API_KEY": "sk_your_key_here" }
     }
   }
 }
 ```
+
+(`singapore-proxy-mcp` is a thin launcher around [`mcp-remote`](https://www.npmjs.com/package/mcp-remote)
+pointed at the hosted endpoint. If you prefer, you can call `mcp-remote` directly:
+`npx -y mcp-remote https://mcp.singaporemobileproxy.com/mcp --header "x-api-key:${SMP_API_KEY}"`.)
 
 **Claude.ai / clients with native remote MCP:** add a custom connector for
 `https://mcp.singaporemobileproxy.com/mcp` with header `x-api-key: <your key>`.
