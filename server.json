@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.xavierfok/singapore-proxy-mcp",
+  "name": "io.github.Xavierfok/singapore-proxy-mcp",
   "description": "Browse the web and run Google search through real Singapore mobile carrier IPs.",
   "version": "1.0.0",
   "repository": {
