@@ -2,11 +2,28 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Xavierfok/singapore-proxy-mcp",
   "description": "Browse the web and run Google search through real Singapore mobile carrier IPs.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "url": "https://github.com/Xavierfok/singapore-proxy-mcp",
     "source": "github"
   },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "singapore-proxy-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "SMP_API_KEY",
+          "description": "Your SingaporeMobileProxy API key. Free 10GB at https://singaporemobileproxy.com/client/mcp",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
