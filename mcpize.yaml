@@ -1,0 +1,29 @@
+# MCPize Configuration
+# Docs: https://mcpize.com/docs/mcpize-yaml
+
+version: 1
+
+name: "Singapore Proxy"
+slug: "singapore-proxy"
+
+runtime: typescript
+entry: "https://mcp.singaporemobileproxy.com/mcp"
+
+build:
+  install: "npm install"
+
+start:
+  type: http
+  command: "npx"
+  args:
+    - "-y"
+    - "mcp-remote"
+    - "https://mcp.singaporemobileproxy.com/mcp"
+    - "--header"
+    - "x-api-key:${SMP_API_KEY}"
+
+bridge:
+  mode: http
+
+credentials:
+  - name: "SMP_API_KEY"
