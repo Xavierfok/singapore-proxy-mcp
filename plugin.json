@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "singapore-proxy",
+  "version": "1.0.0",
+  "description": "Fetch pages and run Google searches from a real Singapore mobile IP (Singtel or M1). Hosted MCP server; set SMP_API_KEY in your environment. Keys come with a free 24-hour trial at https://singaporemobileproxy.com/client/mcp",
+  "author": { "name": "Xavier Fok", "url": "https://github.com/Xavierfok" },
+  "homepage": "https://singaporemobileproxy.com/client/mcp",
+  "repository": "https://github.com/Xavierfok/singapore-proxy-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "proxy", "singapore", "mobile-proxy", "web-scraping", "serp"]
+}
