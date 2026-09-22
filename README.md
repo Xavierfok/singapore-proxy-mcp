@@ -59,9 +59,10 @@ PDPA / localization QA.
 
 ## Pricing
 
-The key comes with a free 24-hour trial, capped at 10GB, one per email. After that it runs on a
-dedicated Singapore mobile proxy plan (from $40/month, see
-[plans](https://singaporemobileproxy.com/plans?utm_source=github&utm_medium=repo&utm_campaign=singapore_proxy_mcp)).
+The key comes with a free 24-hour trial, capped at 10GB, one per email. After that the same key
+keeps working on a dedicated Singapore mobile proxy: **$4 for a day or $13 for a week**, or
+monthly from $40 (see
+[plans](https://singaporemobileproxy.com/client/plans?days=1&utm_source=github&utm_medium=repo&utm_campaign=singapore_proxy_mcp)).
 The same proxy works over plain HTTP/SOCKS outside MCP too.
 
 ## Endpoint

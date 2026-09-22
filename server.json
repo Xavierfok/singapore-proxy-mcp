@@ -17,7 +17,7 @@
       "environmentVariables": [
         {
           "name": "SMP_API_KEY",
-          "description": "Your SingaporeMobileProxy API key. Free 24-hour trial key at https://singaporemobileproxy.com/client/mcp",
+          "description": "Your SingaporeMobileProxy API key. Free 24-hour trial key at https://singaporemobileproxy.com/client/mcp, then $4/day or $13/week",
           "isRequired": true,
           "isSecret": true
         }
@@ -31,7 +31,7 @@
       "headers": [
         {
           "name": "x-api-key",
-          "description": "Your SingaporeMobileProxy API key. Free 24-hour trial key at https://singaporemobileproxy.com/client/mcp",
+          "description": "Your SingaporeMobileProxy API key. Free 24-hour trial key at https://singaporemobileproxy.com/client/mcp, then $4/day or $13/week",
           "isRequired": true,
           "isSecret": true
         }
