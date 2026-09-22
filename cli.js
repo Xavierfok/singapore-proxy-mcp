@@ -5,7 +5,7 @@
 //
 // Client config:
 //   { "command": "npx", "args": ["-y","singapore-proxy-mcp"], "env": { "SMP_API_KEY": "sk_..." } }
-// Free 10GB key: https://singaporemobileproxy.com/client/mcp
+// Free 24-hour trial key: https://singaporemobileproxy.com/client/mcp
 
 const path = require("path");
 const { spawn } = require("child_process");
@@ -16,7 +16,7 @@ const KEY = process.env.SMP_API_KEY || process.env.X_API_KEY || "";
 if (!KEY) {
   process.stderr.write(
     "[singapore-proxy-mcp] no API key set. export SMP_API_KEY=sk_... " +
-    "(get a free 10GB key at https://singaporemobileproxy.com/client/mcp)\n"
+    "(get a key with a free 24-hour trial at https://singaporemobileproxy.com/client/mcp)\n"
   );
 }
 

@@ -2,7 +2,7 @@
   "mcpServers": {
     "singapore-proxy": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://mcp.singaporemobileproxy.com/mcp", "--header", "x-api-key:${SMP_API_KEY}"],
+      "args": ["-y", "singapore-proxy-mcp"],
       "env": { "SMP_API_KEY": "sk_your_key_here" }
     }
   }

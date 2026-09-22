@@ -1,18 +1,18 @@
 # Singapore Proxy MCP
 
 **Browse the web as if you were on a Singapore mobile network.** Give Claude, Cursor,
-Cline, or any MCP agent a real Singapore mobile IP (SingTel / StarHub / M1 carrier
-ASNs) to fetch pages, run Singapore-localized Google searches, and check geo-locked
+Cline, or any MCP agent a real Singapore mobile IP (Singtel and M1 carrier networks)
+to fetch pages, run Singapore-localized Google searches, and check geo-locked
 content - something the agent cannot do on its own because it can't set a proxy.
 
 > The Singapore web, as your AI sees it.
 
 This is a **hosted (remote) MCP server**. You don't install or run any code - you point
-your client at the endpoint with a free API key and it works.
+your client at the endpoint with an API key and it works.
 
 ## Quick start (30 seconds)
 
-1. Get a free key (includes 10GB): **https://singaporemobileproxy.com/client/mcp**
+1. Get a key with a free 24-hour trial (10GB): **https://singaporemobileproxy.com/client/mcp?utm_source=github&utm_medium=repo&utm_campaign=singapore_proxy_mcp**
 2. Add the server to your client:
 
 **Claude Desktop / Cursor / Cline / Windsurf** (`claude_desktop_config.json`, `~/.cursor/mcp.json`, etc.):
@@ -50,7 +50,8 @@ pointed at the hosted endpoint. If you prefer, you can call `mcp-remote` directl
 ## Why a specialist
 
 Global proxy MCP servers (Bright Data, Oxylabs, Apify) are generalists. This one does
-**only Singapore**, on real mobile-carrier ASNs that are hard to source and high-trust.
+**only Singapore**, on dedicated 4G lines on the Singtel and M1 networks. Sites treat those
+IPs like any other phone on the network, because that's what they are.
 
 Use cases: SERP / SEO / ad verification from a real SG IP, e-commerce and app-store
 availability + pricing checks in Singapore, scraping SG geo-gated sites for agents,
@@ -58,9 +59,10 @@ PDPA / localization QA.
 
 ## Pricing
 
-Free 10GB to start at [singaporemobileproxy.com/client/mcp](https://singaporemobileproxy.com/client/mcp).
-Heavy use upgrades to a dedicated Singapore mobile proxy subscription - the same proxy
-works over HTTP/SOCKS outside MCP too.
+The key comes with a free 24-hour trial, capped at 10GB, one per email. After that it runs on a
+dedicated Singapore mobile proxy plan (from $40/month, see
+[plans](https://singaporemobileproxy.com/plans?utm_source=github&utm_medium=repo&utm_campaign=singapore_proxy_mcp)).
+The same proxy works over plain HTTP/SOCKS outside MCP too.
 
 ## Endpoint
 
