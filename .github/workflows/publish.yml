@@ -3,6 +3,10 @@
 #   organization/user: Xavierfok   repository: singapore-proxy-mcp
 #   workflow filename: publish.yml
 # Then: bump package.json, tag v<version>, push the tag.
+#
+# NOTE: do NOT pass registry-url to setup-node. It writes an .npmrc holding a
+# placeholder ${NODE_AUTH_TOKEN}, npm sends that dummy credential instead of
+# exchanging its OIDC identity, and the publish dies with a bare 404.
 name: publish
 
 on:
@@ -22,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: "22"
-          registry-url: "https://registry.npmjs.org"
           package-manager-cache: false
       - run: npm install -g npm@latest   # trusted publishing needs npm >= 11.5.1
+      - run: npm --version
       - run: npm publish
