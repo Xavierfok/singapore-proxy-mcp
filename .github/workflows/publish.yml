@@ -1,0 +1,28 @@
+# Publishes to npm via trusted publishing (OIDC) -- no token, no 2FA prompt.
+# One-time setup on npmjs.com -> package -> Settings -> Trusted Publisher:
+#   organization/user: Xavierfok   repository: singapore-proxy-mcp
+#   workflow filename: publish.yml
+# Then: bump package.json, tag v<version>, push the tag.
+name: publish
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write        # required for OIDC
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          registry-url: "https://registry.npmjs.org"
+          package-manager-cache: false
+      - run: npm install -g npm@latest   # trusted publishing needs npm >= 11.5.1
+      - run: npm publish
