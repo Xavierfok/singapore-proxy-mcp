@@ -11,13 +11,28 @@ The canonical registry. Uses `server.json` (in this repo) + the `mcp-publisher` 
 brew install mcp-publisher        # or: go install .../cmd/mcp-publisher@latest
 
 cd singapore-proxy-mcp
-mcp-publisher login github         # OAuth as the GitHub owner of io.github.xavierfok/*
+mcp-publisher login github         # OAuth as the GitHub owner of io.github.Xavierfok/*
 mcp-publisher publish              # validates + publishes server.json
 ```
 
-Namespace `io.github.xavierfok/singapore-proxy-mcp` is verified by GitHub login (you must
+Namespace `io.github.Xavierfok/singapore-proxy-mcp` is verified by GitHub login (you must
 own the `Xavierfok` account). Alternative branded namespace: `com.singaporemobileproxy/...`
 verified via a DNS TXT record - use `mcp-publisher login dns` if you prefer that.
+
+### Version numbers
+
+Two different numbers live in `server.json`:
+
+- `packages[0].version` is the **npm** release the registry entry points at. It must equal
+  `package.json`, `package-lock.json` and `plugin.json`.
+- the top-level `version` is the **registry entry** itself. The registry never lets a version be
+  reused, and it already holds 1.0.0, 1.0.1 and 1.0.2 (1.0.2 points at npm 1.0.1), so this one
+  can run ahead of npm but never behind it.
+
+`node scripts/check-versions.js` checks both rules and runs in CI. For the next launcher change,
+bump npm and the registry entry together to the same new number (1.0.3): `package.json`,
+`package-lock.json`, `plugin.json`, both `server.json` fields, then tag `v1.0.3` and push the tag
+(`publish.yml`), and only after npm has the version run `mcp-publisher publish`.
 
 ## 2. Aggregator directories (where people browse)
 
