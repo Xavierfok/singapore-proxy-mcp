@@ -31,4 +31,4 @@ jobs:
       - run: npm --version
       # npmjs.com shows README.md: tag its links as npm, not github, so signups name the real source.
       - run: sed -i 's/utm_source=github&utm_medium=repo/utm_source=npm\&utm_medium=directory/g' README.md && grep -c 'utm_source=npm' README.md
-      - run: npm publish
+      - run: npm publish --loglevel verbose
