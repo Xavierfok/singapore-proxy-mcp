@@ -36,4 +36,4 @@ honestly more interested in feedback than installs right now: are these four the
 # First comment (drop the link here, not in the body)
 
 repo + install: https://github.com/Xavierfok/singapore-proxy-mcp
-free key (10GB): https://singaporemobileproxy.com/client/mcp
+free key (10GB): https://singaporemobileproxy.com/client/mcp?utm_source=reddit&utm_medium=forum&utm_campaign=singapore_proxy_mcp

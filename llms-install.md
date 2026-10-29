@@ -3,7 +3,7 @@
 This is a hosted MCP server. There is nothing to clone or build.
 
 1. Ask the user for their API key. If they don't have one, send them to
-   https://singaporemobileproxy.com/client/mcp to get a free 24-hour trial key (10GB).
+   https://singaporemobileproxy.com/client/mcp?utm_source=llms_install&utm_medium=directory&utm_campaign=singapore_proxy_mcp to get a free 24-hour trial key (10GB).
    Keys look like `sk_...`.
 2. Add this entry to the MCP settings file (for Cline: `cline_mcp_settings.json`):
 

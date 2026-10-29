@@ -1,6 +1,6 @@
 {
   "name": "singapore-proxy-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Browse the web + Google search through real Singapore mobile carrier IPs, inside Claude/Cursor/Cline. Remote MCP server launcher.",
   "bin": { "singapore-proxy-mcp": "cli.js" },
   "type": "commonjs",
@@ -9,7 +9,7 @@
   "dependencies": { "mcp-remote": "^0.1.38" },
   "keywords": ["mcp","model-context-protocol","modelcontextprotocol","mcp-server","proxy","singapore","mobile-proxy","residential-proxy","claude","cursor","cline","scraping","serp"],
   "repository": { "type": "git", "url": "git+https://github.com/Xavierfok/singapore-proxy-mcp.git" },
-  "homepage": "https://singaporemobileproxy.com/client/mcp",
+  "homepage": "https://singaporemobileproxy.com/client/mcp?utm_source=npm&utm_medium=directory&utm_campaign=singapore_proxy_mcp",
   "bugs": { "url": "https://github.com/Xavierfok/singapore-proxy-mcp/issues" },
   "license": "MIT",
   "engines": { "node": ">=18" }
