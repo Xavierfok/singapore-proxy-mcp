@@ -33,8 +33,13 @@ your client at the endpoint with an API key and it works.
 pointed at the hosted endpoint. If you prefer, you can call `mcp-remote` directly:
 `npx -y mcp-remote https://mcp.singaporemobileproxy.com/mcp --header "x-api-key:${SMP_API_KEY}"`.)
 
-**Claude.ai / clients with native remote MCP:** add a custom connector for
-`https://mcp.singaporemobileproxy.com/mcp` with header `x-api-key: <your key>`.
+**Claude.ai, ChatGPT and other clients with native remote MCP (sign in, no key to paste):** add a
+custom connector for **`https://mcp.singaporemobileproxy.com/connector`**. Your client opens a
+Singapore Mobile Proxy sign-in, you click Allow, and it's connected. Disconnect any time by revoking
+the `mcp-oauth` key under API keys in your dashboard.
+
+Clients that send headers can still use `https://mcp.singaporemobileproxy.com/mcp` with
+`x-api-key: <your key>`.
 
 3. Ask your agent: *"use my_proxy_status"* - it should report a Singapore mobile exit IP.
 
@@ -67,7 +72,11 @@ The same proxy works over plain HTTP/SOCKS outside MCP too.
 
 ## Endpoint
 
-`https://mcp.singaporemobileproxy.com/mcp` - Streamable HTTP, auth via `x-api-key` header.
+- `https://mcp.singaporemobileproxy.com/connector` - Streamable HTTP, **OAuth 2.1** (authorization code + PKCE,
+  dynamic client registration). Metadata: `/.well-known/oauth-protected-resource/connector`.
+- `https://mcp.singaporemobileproxy.com/mcp` - Streamable HTTP, auth via `x-api-key` header (or `Authorization: Bearer <key>`).
+
+Privacy policy: https://singaporemobileproxy.com/privacy
 
 ---
 
