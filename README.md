@@ -2,7 +2,7 @@
 
 **Browse the web as if you were on a Singapore mobile network.** Give Claude, Cursor,
 Cline, or any MCP agent a real Singapore mobile IP (Singtel and M1 carrier networks)
-to fetch pages, run Singapore-localized Google searches, and check geo-locked
+to fetch pages, search the web with Singapore-localized results, and check geo-locked
 content - something the agent cannot do on its own because it can't set a proxy.
 
 > The Singapore web, as your AI sees it.
@@ -54,7 +54,7 @@ Clients that send headers can still use `https://mcp.singaporemobileproxy.com/mc
 | Tool | What it does |
 |------|--------------|
 | `fetch_url(url, format)` | Fetch a page through a SG mobile IP (markdown / text / html) |
-| `search_google(query, num)` | Singapore-localized Google organic results (`gl=sg`) |
+| `search_web(query, num)` | Singapore-localized web search results: title, link and snippet |
 | `rotate_ip()` | Get a fresh Singapore mobile IP |
 | `my_proxy_status()` | Current exit IP, carrier, remaining quota |
 
@@ -64,7 +64,7 @@ Global proxy MCP servers (Bright Data, Oxylabs, Apify) are generalists. This one
 **only Singapore**, on dedicated 4G lines on the Singtel and M1 networks. Sites treat those
 IPs like any other phone on the network, because that's what they are.
 
-Use cases: SERP / SEO / ad verification from a real SG IP, e-commerce and app-store
+Use cases: Singapore search results / SEO / ad checks from a real SG IP, e-commerce and app-store
 availability + pricing checks in Singapore, scraping SG geo-gated sites for agents,
 PDPA / localization QA.
 

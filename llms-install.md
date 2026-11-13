@@ -26,4 +26,4 @@ This is a hosted MCP server. There is nothing to clone or build.
 3. Verify: call the `my_proxy_status` tool. It should return a Singapore mobile exit IP and
    the carrier (Singtel or M1). If it says "API key is invalid.", the key is wrong or expired.
 
-Tools: `fetch_url`, `search_google`, `rotate_ip`, `my_proxy_status`.
+Tools: `fetch_url`, `search_web`, `rotate_ip`, `my_proxy_status`.
