@@ -1,7 +1,7 @@
 {
   "name": "singapore-proxy-mcp",
   "version": "1.0.2",
-  "description": "Browse the web + Google search through real Singapore mobile carrier IPs, inside Claude/Cursor/Cline. Remote MCP server launcher.",
+  "description": "Browse and search the web through real Singapore mobile carrier IPs, inside Claude/Cursor/Cline. Remote MCP server launcher.",
   "bin": { "singapore-proxy-mcp": "cli.js" },
   "type": "commonjs",
   "files": ["cli.js", "README.md", "LICENSE", "server.json"],
