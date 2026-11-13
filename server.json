@@ -1,12 +1,30 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Xavierfok/singapore-proxy-mcp",
-  "description": "Browse the web and run Google search through real Singapore mobile carrier IPs.",
-  "version": "1.0.4",
+  "title": "Singapore Proxy MCP",
+  "description": "Browse and search the web through real Singapore mobile carrier IPs (Singtel, M1).",
+  "version": "1.0.5",
   "repository": {
     "url": "https://github.com/Xavierfok/singapore-proxy-mcp",
     "source": "github"
   },
+  "websiteUrl": "https://singaporemobileproxy.com/?utm_source=mcp_registry&utm_medium=directory&utm_campaign=singapore_proxy_mcp",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/Xavierfok/singapore-proxy-mcp/main/assets/logo-square-500.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "500x500"
+      ]
+    },
+    {
+      "src": "https://singaporemobileproxy.com/static/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
   "packages": [
     {
       "registryType": "npm",
