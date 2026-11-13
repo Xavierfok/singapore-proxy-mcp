@@ -1,0 +1,12 @@
+{
+  "name": "singapore-proxy",
+  "version": "1.0.4",
+  "description": "Fetch pages and search the web from a real Singapore 4G/5G mobile IP, rotate to a fresh IP, and check your proxy's status. Sign in with your Singapore Mobile Proxy account.",
+  "mcpServers": {
+    "singapore-proxy": {
+      "type": "http",
+      "url": "https://mcp.singaporemobileproxy.com/connector"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

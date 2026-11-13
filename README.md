@@ -38,6 +38,12 @@ custom connector for **`https://mcp.singaporemobileproxy.com/connector`**. Your 
 Singapore Mobile Proxy sign-in, you click Allow, and it's connected. Disconnect any time by revoking
 the `mcp-oauth` key under API keys in your dashboard.
 
+**Gemini CLI:** install it as an extension, then sign in the first time a tool runs:
+
+```bash
+gemini extensions install https://github.com/Xavierfok/singapore-proxy-mcp
+```
+
 Clients that send headers can still use `https://mcp.singaporemobileproxy.com/mcp` with
 `x-api-key: <your key>`.
 
